@@ -186,6 +186,36 @@ ul{list-style:none}
 .extra-price{font-size:12px;color:var(--text2);margin-top:auto}
 .extra-price b{font-family:var(--font-d);font-size:20px;color:var(--accent)}
 
+/* ── HERO SUB ─────────────────────────────────────────────────── */
+.hero-sub{font-family:var(--font-d);font-size:clamp(16px,3vw,22px);color:var(--text2);margin-bottom:20px;text-transform:uppercase;letter-spacing:.02em}
+
+/* ── SCREED FOCUS SECTION ────────────────────────────────────── */
+.screed-focus{background:var(--accent-light);border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
+.screed-features{display:grid;grid-template-columns:repeat(auto-fill,minmax(260px,1fr));gap:16px;margin-bottom:32px}
+.screed-feature{background:var(--bg);padding:28px;border-radius:var(--radius);border:1px solid var(--line);transition:all .3s}
+.screed-feature:hover{border-color:var(--accent);transform:translateY(-2px);box-shadow:0 8px 24px rgba(0,93,169,.08)}
+.screed-feature-icon{width:44px;height:44px;background:rgba(0,93,169,.12);border-radius:10px;display:flex;align-items:center;justify-content:center;margin-bottom:14px}
+.screed-feature-icon svg{width:20px;height:20px;color:var(--accent)}
+.screed-feature h4{font-size:17px;font-weight:700;margin-bottom:8px}
+.screed-feature p{font-size:14px;color:var(--text2);line-height:1.6}
+.screed-cta{display:flex;align-items:center;gap:20px;flex-wrap:wrap;justify-content:center}
+.screed-note{font-size:14px;color:var(--text2)}
+
+/* ── SERVICE FEATURED CARD ───────────────────────────────────── */
+.service-featured{grid-column:1/-1;background:var(--accent-light);border:2px solid var(--accent);position:relative;overflow:hidden}
+.service-featured:hover{border-color:var(--accent);box-shadow:0 12px 32px rgba(0,93,169,.12)}
+.service-featured-badge{position:absolute;top:12px;right:12px;background:var(--accent);color:#fff;font-size:11px;font-weight:700;padding:4px 12px;border-radius:20px;text-transform:uppercase;letter-spacing:1px}
+.service-featured h3{font-size:22px;color:var(--accent)}
+.service-featured p{font-size:15px;max-width:600px}
+.service-link{display:inline-flex;align-items:center;gap:6px;color:var(--accent);font-weight:600;font-size:14px;margin-top:8px;transition:gap .2s}
+.service-link:hover{gap:10px}
+@media(max-width:600px){
+  .service-featured{padding:24px 20px}
+  .service-featured-badge{position:static;display:inline-block;margin-bottom:12px}
+  .screed-features{display:flex!important;flex-direction:column!important}
+  .screed-cta{flex-direction:column;text-align:center}
+}
+
 /* ── FLOATING CONTACTS (як на evakuator-odesa.site) ──────────── */
 .float-contacts{position:fixed!important;right:12px!important;bottom:90px!important;left:auto!important;z-index:9998!important;display:flex;flex-direction:column;gap:8px}
 .float-btn{width:48px;height:48px;border-radius:50%;display:grid;place-items:center;color:#fff;text-decoration:none;box-shadow:0 4px 14px rgba(0,0,0,.2);transition:transform .2s,box-shadow .2s;position:relative}
